@@ -1,0 +1,132 @@
+23:42:38.777 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Initializing filter 'tokenAuthenticationFilter'
+23:42:38.777 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured successfully
+23:42:38.778 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Initializing filter 'customUsernamePasswordAuthenticationFilter'
+23:42:38.778 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Filter 'customUsernamePasswordAuthenticationFilter' configured successfully
+23:49:33.607 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Initializing filter 'tokenAuthenticationFilter'
+23:49:33.608 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured successfully
+23:49:33.610 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Initializing filter 'customUsernamePasswordAuthenticationFilter'
+23:49:33.610 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Filter 'customUsernamePasswordAuthenticationFilter' configured successfully
+23:50:27.523 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Initializing filter 'tokenAuthenticationFilter'
+23:50:27.523 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured successfully
+23:50:27.524 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Initializing filter 'customUsernamePasswordAuthenticationFilter'
+23:50:27.524 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Filter 'customUsernamePasswordAuthenticationFilter' configured successfully
+23:52:37.089 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Initializing filter 'tokenAuthenticationFilter'
+23:52:37.091 [localhost-startStop-1] DEBUG c.o.f.TokenAuthenticationFilter - Filter 'tokenAuthenticationFilter' configured successfully
+23:52:37.092 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Initializing filter 'customUsernamePasswordAuthenticationFilter'
+23:52:37.092 [localhost-startStop-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Filter 'customUsernamePasswordAuthenticationFilter' configured successfully
+23:53:13.208 [http-nio-8080-exec-1] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:19.491 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:19.491 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:53:19.504 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:19.504 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:53:27.755 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:39.214 [http-nio-8080-exec-5] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Request is to process authentication
+23:53:39.214 [http-nio-8080-exec-5] INFO  c.o.f.CustomUsernamePasswordAuthenticationFilter - Attempt authentication with JSON request, Inside CustomUsernamePasswordAuthenticationFilter
+23:53:39.223 [http-nio-8080-exec-5] INFO  c.o.f.CustomUsernamePasswordAuthenticationFilter - Authentication request successfully bind for : abhishek2
+23:53:39.227 [http-nio-8080-exec-5] INFO  c.o.s.RESTSecurityUserDetailsService -  Received user name
+23:53:39.491 [http-nio-8080-exec-5] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Authentication request failed: org.springframework.security.authentication.BadCredentialsException: Bad credentials
+org.springframework.security.authentication.BadCredentialsException: Bad credentials
+	at org.springframework.security.authentication.dao.AbstractUserDetailsAuthenticationProvider.authenticate(AbstractUserDetailsAuthenticationProvider.java:151)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:174)
+	at org.springframework.security.authentication.ProviderManager.authenticate(ProviderManager.java:199)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfigurerAdapter$AuthenticationManagerDelegator.authenticate(WebSecurityConfigurerAdapter.java:504)
+	at com.oauth.filters.CustomUsernamePasswordAuthenticationFilter.attemptAuthentication(CustomUsernamePasswordAuthenticationFilter.java:92)
+	at org.springframework.security.web.authentication.AbstractAuthenticationProcessingFilter.doFilter(AbstractAuthenticationProcessingFilter.java:212)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:64)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.SecurityContextPersistenceFilter.doFilter(SecurityContextPersistenceFilter.java:105)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:56)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:331)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:214)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:177)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:347)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:263)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:108)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:81)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:504)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:140)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:803)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:790)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1459)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1142)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:617)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+23:53:39.492 [http-nio-8080-exec-5] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Updated SecurityContextHolder to contain null Authentication
+23:53:39.492 [http-nio-8080-exec-5] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Delegating to authentication failure handler com.oauth.handler.RESTAuthenticationFailureHandler@3753bba7
+23:53:39.492 [http-nio-8080-exec-5] INFO  c.o.h.RESTAuthenticationFailureHandler - Inside REST Authentication Failure Handler
+23:53:39.497 [http-nio-8080-exec-5] DEBUG c.o.h.RESTAuthenticationFailureHandler - Redirecting to /fail
+23:53:39.509 [http-nio-8080-exec-6] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:56.060 [http-nio-8080-exec-8] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:56.060 [http-nio-8080-exec-8] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:53:56.061 [http-nio-8080-exec-8] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:53:56.061 [http-nio-8080-exec-8] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:53:56.247 [http-nio-8080-exec-8] INFO  c.o.s.RESTSecurityUserDetailsService -  Received user name
+23:57:46.690 [http-nio-8080-exec-10] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:57:46.691 [http-nio-8080-exec-10] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:57:46.691 [http-nio-8080-exec-10] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:57:46.692 [http-nio-8080-exec-10] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:57:46.826 [http-nio-8080-exec-10] INFO  c.o.s.RESTSecurityUserDetailsService -  Received user name
+23:58:00.434 [http-nio-8080-exec-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Request is to process authentication
+23:58:00.436 [http-nio-8080-exec-1] INFO  c.o.f.CustomUsernamePasswordAuthenticationFilter - Attempt authentication with JSON request, Inside CustomUsernamePasswordAuthenticationFilter
+23:58:00.437 [http-nio-8080-exec-1] INFO  c.o.f.CustomUsernamePasswordAuthenticationFilter - Authentication request successfully bind for : abhishek
+23:58:00.437 [http-nio-8080-exec-1] INFO  c.o.s.RESTSecurityUserDetailsService -  Received user name
+23:58:00.583 [http-nio-8080-exec-1] DEBUG c.o.f.CustomUsernamePasswordAuthenticationFilter - Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@855494bc: Principal: com.oauth.service.RESTSecurityUserDetails@3eb6da10; Credentials: [PROTECTED]; Authenticated: true; Details: org.springframework.security.web.authentication.WebAuthenticationDetails@ffff4c9c: RemoteIpAddress: 0:0:0:0:0:0:0:1; SessionId: 3DE4F7614F2F58A056E47D1384541196; Granted Authorities: ROLE_USER
+23:58:00.585 [http-nio-8080-exec-1] INFO  c.o.h.RESTAuthenticationSuccessHandler - Inside REST Authentication SuccessHandler.
+23:58:31.946 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:58:31.946 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Attempt authentication for token :
+23:58:32.029 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Authentication successfully for token :
+23:58:32.029 [http-nio-8080-exec-2] DEBUG c.o.f.TokenAuthenticationFilter - Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@5c33394f: Principal: com.oauth.service.RESTSecurityUserDetails@5275354c; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+23:58:32.030 [http-nio-8080-exec-2] INFO  c.o.h.RESTTokenAuthenticationSuccessHandler - Inside rest authentication success handler.
+23:58:32.033 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:58:32.034 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Attempt authentication for token :
+23:58:32.091 [http-nio-8080-exec-2] INFO  c.o.f.TokenAuthenticationFilter - Authentication successfully for token :
+23:58:32.091 [http-nio-8080-exec-2] DEBUG c.o.f.TokenAuthenticationFilter - Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@60fceb87: Principal: com.oauth.service.RESTSecurityUserDetails@6ebae784; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+23:58:32.091 [http-nio-8080-exec-2] INFO  c.o.h.RESTTokenAuthenticationSuccessHandler - Inside rest authentication success handler.
+23:58:36.446 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:58:36.446 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Attempt authentication for token :
+23:58:36.613 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Authentication successfully for token :
+23:58:36.614 [http-nio-8080-exec-3] DEBUG c.o.f.TokenAuthenticationFilter - Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@2c372a69: Principal: com.oauth.service.RESTSecurityUserDetails@2271266a; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+23:58:36.614 [http-nio-8080-exec-3] INFO  c.o.h.RESTTokenAuthenticationSuccessHandler - Inside rest authentication success handler.
+23:58:36.614 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:58:36.614 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Attempt authentication for token :
+23:58:36.682 [http-nio-8080-exec-3] INFO  c.o.f.TokenAuthenticationFilter - Authentication successfully for token :
+23:58:36.682 [http-nio-8080-exec-3] DEBUG c.o.f.TokenAuthenticationFilter - Authentication success. Updating SecurityContextHolder to contain: org.springframework.security.authentication.UsernamePasswordAuthenticationToken@446a3f05: Principal: com.oauth.service.RESTSecurityUserDetails@4a2c3306; Credentials: [PROTECTED]; Authenticated: true; Details: null; Granted Authorities: ROLE_USER
+23:58:36.682 [http-nio-8080-exec-3] INFO  c.o.h.RESTTokenAuthenticationSuccessHandler - Inside rest authentication success handler.
+23:58:41.390 [http-nio-8080-exec-4] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:58:41.390 [http-nio-8080-exec-4] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:58:41.391 [http-nio-8080-exec-4] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:58:41.391 [http-nio-8080-exec-4] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:59:08.116 [http-nio-8080-exec-7] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:59:08.116 [http-nio-8080-exec-7] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
+23:59:08.117 [http-nio-8080-exec-7] INFO  c.o.f.TokenAuthenticationFilter - Token successfully received inside token validator
+23:59:08.117 [http-nio-8080-exec-7] INFO  c.o.f.TokenAuthenticationFilter - This is a permit all authentication request
