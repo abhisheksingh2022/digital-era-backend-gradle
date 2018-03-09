@@ -23,11 +23,5 @@ build/
 *~
 
 target/
-
-*.ipr
-*.iws
-gradle
-.gradle
-build
-*.log
-/bin/
+node/
+node_modules/

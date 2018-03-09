@@ -20,3 +20,13 @@ subprojects {
 	   compile group: 'org.apache.commons', name: 'commons-lang3', version:'3.7'
 	}
 }
+
+/*jar {
+    from('digital-era-frontend/dist') {
+        //Public is a default supported Spring Boot resources directory.
+        into 'public'
+    }
+}*/
+
+//frontend:build will be run before the processResources
+//processResources.dependsOn('digital-era-frontend:build')
